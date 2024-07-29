@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Account Registration</title>
+</head>
+
+<body>
+  <main>
+    <section class="form" id="registerForm">
+      <form id="registrationForm">
+        <section class="form-group">
+          <h1>Account registration</h1>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="name" required><br>
+        </section>
+
+        <section class="form-group">
+          <label for="userName">Username:</label><br>
+          <input type="text" id="userName" name="userName" placeholder="username" required><br>
+        </section>
+
+        <section class="form-group">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="email" required><br>
+        </section>
+
+        <section class="form-group">
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" placeholder="password" required><br>
+        </section>
+
+        <section class="form-group">
+          <label for="confirm">Confirm password:</label><br>
+          <input type="password" id="confirm" name="confirm" placeholder="confirm password" required><br>
+        </section>
+
+        <section class="submit-section">
+          <input type="submit" id="submitButton" value="Send" disabled>
+        </section>
+        <section class="container signin">
+          <p>Already have an account? <a href="#" id="signInLink">Sign in</a></p>
+        </section>
+
+      </form>
+    </section>
+
+    <section class="form" id="loginForm" style="display: none;">
+      <form id="login">
+        <section class="form-group">
+          <h1>Sign In</h1>
+          <label for="loginUsername">Username:</label><br>
+          <input type="text" id="loginUsername" name="loginUsername" placeholder="username" required><br>
+        </section>
+
+        <section class="form-group">
+          <label for="loginPassword">Password:</label><br>
+          <input type="password" id="loginPassword" name="loginPassword" placeholder="password" required><br>
+        </section>
+
+        <section class="submit-section">
+          <input type="submit" value="Sign In">
+        </section>
+      </form>
+    </section>
+
+    <section id="welcomeMessage" class="welcome-message" style="display: none;">
+      <p id="welcomeText"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
